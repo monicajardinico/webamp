@@ -1,0 +1,39 @@
+<script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+
+
+<div style="width:1000px; height:300px; position:absolute; bottom:0px; left:0px;">
+	<div id="winamp-container"></div>
+    <script>
+const Winamp = window.Webamp;
+// All configuration options are optional.
+const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+            metaData: {
+                artist: "Solange",
+                title: "Losing You",
+            },
+            url: "https://files.catbox.moe/5x2o11.mp3",
+        }, {
+            metaData: {
+                artist: "Whitney Houston",
+                title: "Sweet Thing",
+            },
+            url: "https://files.catbox.moe/s6tq5e.mp3",
+        },
+        {
+            metaData: {
+                artist: "Diana Ross & The Supremes, The Temptations",
+                title: "I'm Gonna Make You Love Me",
+            },
+            url: "https://files.catbox.moe/dmqfdu.mp3",
+        },
+      ],
+    initialSkin: {
+        url: "URL TO SKIN .WSZ"
+    },
+});
+webamp.renderWhenReady(document.getElementById('winamp-container'));
+</script>
+</div>
