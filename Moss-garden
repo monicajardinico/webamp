@@ -31,7 +31,7 @@ const webamp = new Webamp({
         },
       ],
     initialSkin: {
-        url: "URL TO SKIN .WSZ"
+        url: "https://github.com/pigeon-trash/webamp/blob/main/Expensive_Hi-Fi_1.2.wsz"
     },
 });
 webamp.renderWhenReady(document.getElementById('winamp-container'));
